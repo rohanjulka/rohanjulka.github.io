@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+<script>
+var myApp = angular.module('myApp',[]);
+
+myApp.controller('DoubleController', ['$scope', function($scope) {
+  $scope.double = function(value) { return value * 2; };
+}]);
+</script>
+
+
+<div ng-controller="DoubleController">
+  Two times <input ng-model="num" type="text" ng-init="num=5"> equals {{ double(num) }}
+</div>
+
+</body>
+
+</html>
