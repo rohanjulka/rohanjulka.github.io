@@ -1,7 +1,0 @@
-Time : 10:47:22
-SQLSTATE[42S22]: Column not found: 1054 Unknown column 'page_id' in 'where clause'
-Raw SQL : SELECT * FROM pages where page_id = :page_id
-
-Time : 10:47:11
-SQLSTATE[42S22]: Column not found: 1054 Unknown column 'page_id' in 'where clause'
-Raw SQL : SELECT * FROM pages where page_id = :page_id
